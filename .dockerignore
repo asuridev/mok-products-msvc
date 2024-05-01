@@ -1,0 +1,9 @@
+.gradle/
+bin/
+build/
+.idea
+.git
+.gitignore
+Dockerfile
+compose.yaml
+  

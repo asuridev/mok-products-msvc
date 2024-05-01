@@ -1,0 +1,28 @@
+server:
+  port: 4000
+jwt:
+  SECRET_KEY: my_s3cr3t_k3y
+  DURATION: 10 # jwt duration in minutes
+nats:
+  url: nats://localhost:4222
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  flyway:
+    enabled: false
+  docker:
+    compose:
+      lifecycle-management: start_and_stop
+      enabled: true
+
+#documentation
+springdoc:
+  api:
+    docs:
+      enabled: true
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html
+  
